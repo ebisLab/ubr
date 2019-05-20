@@ -41,7 +41,6 @@ body {
       padding:0 1rem;
     display: inline;
     padding: 5px;
-    float: right;
   }
   footer {
     grid-area: footer;
