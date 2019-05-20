@@ -1,0 +1,33 @@
+.container{
+    max-width: 1180px;
+   }
+   header{
+     background: red;
+   }
+   article{
+     margin: 12px 0 0;
+   }
+   .grid-wrap{
+     display: grid;
+     grid-template-columns: 1fr 1fr ;
+     grid-template-rows: auto;
+     grid-gap: 12px;
+     grid-template-areas: "left-half right-half";
+   }
+   .left-half{
+     background: peru;
+     grid-area: left-half;
+     padding: 2em;
+   }
+   
+   .right-half{
+     background: darkseagreen;
+     grid-area: right-half;
+     padding: 2em;
+   }
+   
+   .content{
+     background: green;
+     padding: 1em;
+     margin: 12px 0;
+   }
