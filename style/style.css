@@ -1,44 +1,75 @@
-.container{
-    max-width: 1180px;
-   }
-   header{
-     background: red;
-   }
-   article{
-     margin: 12px 0 0;
-   }
-   .grid-wrap{
-     display: grid;
-     grid-template-columns: 1fr 1fr ;
-     grid-template-rows: auto;
-     grid-gap: 12px;
-     grid-template-areas: "left-half right-half";
-   }
-   .left-half{
-     background: peru;
-     grid-area: left-half;
-     padding: 2em;
-   }
-   
-   .right-half{
-     background: darkseagreen;
-     grid-area: right-half;
-     padding: 2em;
-   }
-   
-   .content{
-     background: green;
-     padding: 1em;
-     margin: 12px 0;
-   }
-
-   /*Media Query*/
-
-@media screen and (max-width: 700px) {
-	.grid-wrap {
-    display: block;
-	}
-  .left-half, .right-half {
-    margin: 0px;
+body {
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    height: 100vh;
   }
-}
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  article {
+    padding: 1em;
+    margin-bottom: 20px;
+  }
+  header{
+    background: url("https://res.cloudinary.com/megdsie/image/upload/v1558360236/Upbeat_Robot/rock-n-roll-monkey-681546-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 1em;
+    margin-bottom: 20px;
+    height: 300px;
+  }
+  .content {
+    width: calc(1000vw -40);
+    height: 180px;
+    background-color: #F9A134;
+    padding: 1em;
+    margin-bottom: 20px;
+  }
+  header {
+    grid-area: header;
+  }
+  
+  nav {
+        float:right;
+    }
+  
+  nav  li {
+      padding:0 1rem;
+    display: inline;
+    padding: 5px;
+    float: right;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "left-half right-half";
+  }
+  .half-left {
+    grid-area: left-half;
+    background: peru;
+    padding: 2em;
+  }
+  .half-right {
+    grid-area: right-half;
+    background: darkseagreen;
+    padding: 2em;
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+      .grid-wrapper {
+      display: block;
+      }
+    .left-half, .right-half {
+      margin: 0px;
+    }
+  }
