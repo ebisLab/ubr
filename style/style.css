@@ -31,3 +31,14 @@
      padding: 1em;
      margin: 12px 0;
    }
+
+   /*Media Query*/
+
+@media screen and (max-width: 700px) {
+	.grid-wrap {
+    display: block;
+	}
+  .left-half, .right-half {
+    margin: 0px;
+  }
+}
